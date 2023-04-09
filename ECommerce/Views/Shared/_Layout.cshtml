@@ -39,10 +39,11 @@
                                 <a class="dropdown-item" asp-area="Admin" asp-controller="CoverType" asp-action="Index">Cover Type</a>
                                 <a class="dropdown-item" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Company" asp-action="Index">Company</a>
                             </div>
                         </li>
                     </ul>
+                    <partial name="_LoginPartial" />
                     @*<form class="d-flex">
                     <input class="form-control me-sm-2" type="search" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -70,7 +71,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <script src="https://cdn.tiny.cloud/1/5pe3fuzznxhwd9cqpturqqznhz89yafuyy41xsxvm6tr27aj/tinymce/6/tinymce.min.js"          referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/5pe3fuzznxhwd9cqpturqqznhz89yafuyy41xsxvm6tr27aj/tinymce/6/tinymce.min.js"    referrerpolicy="origin"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

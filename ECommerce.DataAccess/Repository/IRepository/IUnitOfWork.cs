@@ -13,6 +13,8 @@ namespace ECommerce.DataAccess.Repository.IRepository
         ICoverTypeRepository CoverType { get; }
 
         IProductRespository Product { get; }
+
+        ICompanyRepository Company { get; }
         void Save();
     }
 }

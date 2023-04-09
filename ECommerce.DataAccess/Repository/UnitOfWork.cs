@@ -19,11 +19,13 @@ namespace ECommerce.DataAccess.Repository
             Category = new CategoryRepository(_db);
             CoverType = new CoverTypeRepository(_db);
              Product  = new ProductRepository(_db);
+            Company = new CompanyRepository(_db);
         }
         public IProductRespository Product { get; private set; }
         public ICategoryRespositoy Category { get; private set; }
 
         public ICoverTypeRepository CoverType { get; private set; }
+        public ICompanyRepository Company { get; private set; }
 
         public void Save()
         {
