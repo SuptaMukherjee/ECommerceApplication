@@ -21,6 +21,13 @@ namespace ECommerce.DataAccess.Data
         public DbSet<CoverType> coverTypes { get; set; }
 
         public DbSet<Product> products { get; set; }
+        public DbSet<ApplicationUser> applicationUsers { get; set; }
+        public DbSet<Company> companies { get; set; }
+        public DbSet<ShoppingCart> shoppingCarts { get; set; }
+
+        public DbSet<OrderHeader> OrderHeaders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+
     }
         
 }
